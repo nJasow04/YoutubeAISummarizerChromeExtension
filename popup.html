@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <span class="logo">▶</span>
+      <span class="title">YouTube Summarizer</span>
+    </div>
+
+    <div id="video-info" class="hidden">
+      <div id="video-title" class="video-title"></div>
+    </div>
+
+    <div id="not-youtube" class="not-youtube hidden">
+      Navigate to a YouTube video to use this extension.
+    </div>
+
+    <div id="buttons" class="buttons hidden">
+      <button id="claude-btn" class="ai-btn claude">
+        <span class="btn-icon">✦</span>
+        <span class="btn-text">Summarize with Claude</span>
+      </button>
+      <button id="gemini-btn" class="ai-btn gemini">
+        <span class="btn-icon">✦</span>
+        <span class="btn-text">Summarize with Gemini</span>
+      </button>
+      <button id="chatgpt-btn" class="ai-btn chatgpt">
+        <span class="btn-icon">✦</span>
+        <span class="btn-text">Summarize with ChatGPT</span>
+      </button>
+    </div>
+
+    <div id="status" class="status hidden"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
